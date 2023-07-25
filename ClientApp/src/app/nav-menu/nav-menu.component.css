@@ -1,0 +1,69 @@
+/* navbar.component.css */
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 70px; /* Set a minimum height for the main navbar */
+}
+
+.slide-out-div {
+  position: absolute;
+  /* Height of the main navbar */
+  right: -300px; /* Initial position outside the viewport */
+  width: 300px;
+  height: calc(100% - 70px); /* Adjust height to fit remaining space */
+  background-color: #f0f0f0;
+  padding: 20px;
+  transition: right 0.3s ease;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items from the top */
+  align-items: center;
+}
+.show-slide-out {
+  right: 0; /* Position to the visible area */
+}
+.container-fluid{
+    padding: 0;
+}
+
+#nav-logo {
+  height: 50px;
+}
+
+#slide-bar-img {
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#slide-top-heading {
+  margin-bottom: 20px;
+}
+
+#slide-bottom-designation {
+  margin-bottom: 20px;
+}
+
+#slide-bottom-logout {
+  margin-top: auto; /* Pushes the button to the bottom */
+}

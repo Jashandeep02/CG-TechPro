@@ -1,0 +1,28 @@
+<!-- navbar.component.html -->
+<div class="container-fluid"> <!-- Use container-fluid to make the main navbar full width -->
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Your Brand/Logo/Title Goes Here -->
+    <a class="navbar-brand" href="#">
+      <img id="nav-logo" src="./Fitchit-removebg-preview.png" alt="Logo">
+    </a>
+
+    <!-- Button to toggle the slide-out div -->
+    <button class="btn ml-auto" (click)="toggleSlideOut()" id="toggleBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#fff">
+        <!-- Font Awesome Icon Code Here -->
+        <path d="M4 8h24c1.104 0 2 .896 2 2s-.896 2-2 2H4c-1.104 0-2-.896-2-2s.896-2 2-2zm0 12h24c1.104 0 2 .896 2 2s-.896 2-2 2H4c-1.104 0-2-.896-2-2s.896-2 2-2zm0-6h24c1.104 0 2 .896 2 2s-.896 2-2 2H4c-1.104 0-2-.896-2-2s.896-2 2-2z"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Slide-out div with vertical navbar -->
+  <div class="slide-out-div" [ngClass]="{'show-slide-out': isSlideOutVisible}">
+    <h4 id="slide-top-heading">Hi! User</h4>
+    <img id="slide-bar-img" src="https://img.freepik.com/free-icon/user_318-159711.jpg" alt="User Image">
+    <h6 id="slide-bottom-designation">Designation</h6>
+    <button id="slide-bottom-logout" class="btn btn-dark">Log out</button>
+  </div>
+
+</div>
