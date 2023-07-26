@@ -10,9 +10,7 @@
 
 </head>
 
-<body >
 
- 
 
   <section class="vh-220 p-5" >
 
@@ -62,7 +60,15 @@
 
                     <div class="d-flex flex-row align-items-center mb-4">
 
-                      <i class="fa fa-lock fa-lg me-3 fa-fw mb-4"></i>
+                      <style>
+                        .custom-in-between-size {
+                          font-size: 1.55em; 
+                        }
+                      </style>
+                      
+                      
+                      <i class="fa fa-lock custom-in-between-size me-3 fa-fw mb-4"></i>
+                      
 
                       <div class="form-outline flex-fill mb-0">
 
@@ -106,7 +112,7 @@
 
     </div>
 
-  </section>
+ </section> 
 
 
   <script>
@@ -148,9 +154,27 @@
 })()
 
   </script>
+ 
 
+ <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script>
+   $(document).ready(function() {
+     $('form > input').keyup(function() {
+       var empty = false;
+       $('form > input').each(function() {
+         if ($(this).val() === '') {
+           empty = true;
+         }
+       });
+ 
+       if (empty) {
+         $('#login').attr('disabled', 'disabled');
+       } else {
+         $('#login').removeAttr('disabled');
+       }
+     });
+   });
+ </script> -->
+ 
 
-
-
-</body>
 
