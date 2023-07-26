@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CG_TechPro.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CG_TechPro.Controllers;
 

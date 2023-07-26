@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,10 +8,10 @@ namespace CG_TechPro.Models
 {
     public class Employee
     {
-        
-        public int Emp_Code { get; set; }
+        [Key]
+        public Guid Emp_Code { get; set; }
 
-        public int U_Id { get; set; }
+        public Guid U_Id { get; set; }
 
         public required string Name { get; set; }
 
