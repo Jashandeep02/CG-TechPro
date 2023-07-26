@@ -1,0 +1,51 @@
+* {
+      box-sizing: border-box; /* Include padding and border in total width */
+    }
+     
+    body {
+        margin: 0;
+        padding: 0;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        max-width: 100%
+      }
+  
+      h1 {color: rgb(2, 2, 73);
+        font-size: 50px;
+        transition: transform 1s ease; /* Add a transition for the zoom-out effect */
+      }
+  
+      h4 {color: rgb(2, 2, 73);
+        font-size: 24px;
+        margin-bottom: 20px;
+        transition: transform 1s ease; /* Add a transition for the zoom-out effect */
+      }
+  
+      button {
+        padding: 15px 30px;
+        font-size: 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+  
+      /* Zoom-out effect on landing */
+      @keyframes zoomOut {
+        from {
+          transform: scale(1.5);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+  
+      /* Apply the zoom-out animation on h1 and h4 */
+      h1.zoom-out, h4.zoom-out {
+        animation: zoomOut 1s ease;
+      }

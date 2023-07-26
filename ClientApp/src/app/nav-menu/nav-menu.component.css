@@ -1,15 +1,12 @@
 /* navbar.component.css */
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+body {
+  margin: 0;
+  font-size: 14px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-html {
-  font-size: 14px;
-}
 @media (min-width: 768px) {
-  html {
+  body {
     font-size: 16px;
   }
 }
@@ -21,33 +18,37 @@ html {
 .navbar-container {
   display: flex;
   flex-direction: row;
-  min-height: 70px; /* Set a minimum height for the main navbar */
+  min-height: 70px;
 }
 
 .slide-out-div {
   position: absolute;
-  /* Height of the main navbar */
-  right: -300px; /* Initial position outside the viewport */
+  right: -300px;
   width: 300px;
-  height: calc(100% - 70px); /* Adjust height to fit remaining space */
+  height: calc(100% - 70px);
   background-color: #f0f0f0;
   padding: 20px;
   transition: right 0.3s ease;
   margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align items from the top */
+  justify-content: flex-start;
   align-items: center;
+  overflow: hidden; /* Hide the slide-out div initially */
 }
+
 .show-slide-out {
-  right: 0; /* Position to the visible area */
+  right: 0;
 }
-.container-fluid{
-    padding: 0;
+
+.container-fluid {
+  padding: 0;
 }
 
 #nav-logo {
   height: 50px;
+  margin-left: 10px;
 }
 
 #slide-bar-img {
@@ -65,5 +66,27 @@ html {
 }
 
 #slide-bottom-logout {
-  margin-top: auto; /* Pushes the button to the bottom */
+  margin-top: auto;
+}
+
+/* Custom CSS for the toggle button */
+#toggleBtn {
+  color: white;
+  margin-left: auto;
+  transition: background-color 0.5s ease, transform 0.1s ease;
+}
+
+/* Additional styling to vertically center the icon in the button */
+#toggleBtn svg {
+  vertical-align: middle;
+}
+
+/* Animation when button is clicked */
+#toggleBtn.clicked {
+  background-color: #f39c12;
+}
+
+/* Zoom effect on hover */
+#toggleBtn:hover {
+  transform: scale(1.1);
 }

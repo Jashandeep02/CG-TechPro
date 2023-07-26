@@ -5,20 +5,17 @@
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Your Brand/Logo/Title Goes Here -->
     <a class="navbar-brand" href="#">
-      <img id="nav-logo" src="./Fitchit-removebg-preview.png" alt="Logo">
+      <img id="nav-logo" src="https://i.ibb.co/tLSJPhD/Fitchit-removebg-preview.png" alt="Logo">
     </a>
 
     <!-- Button to toggle the slide-out div -->
     <button class="btn ml-auto" (click)="toggleSlideOut()" id="toggleBtn">
-      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#fff">
-        <!-- Font Awesome Icon Code Here -->
-        <path d="M4 8h24c1.104 0 2 .896 2 2s-.896 2-2 2H4c-1.104 0-2-.896-2-2s.896-2 2-2zm0 12h24c1.104 0 2 .896 2 2s-.896 2-2 2H4c-1.104 0-2-.896-2-2s.896-2 2-2zm0-6h24c1.104 0 2 .896 2 2s-.896 2-2 2H4c-1.104 0-2-.896-2-2s.896-2 2-2z"/>
-      </svg>
+      <i class="fa-solid fa-bars"></i>
     </button>
   </nav>
 
   <!-- Slide-out div with vertical navbar -->
-  <div class="slide-out-div" [ngClass]="{'show-slide-out': isSlideOutVisible}">
+  <div #slideOutDiv class="slide-out-div" [ngClass]="{'show-slide-out': isSlideOutVisible}">
     <h4 id="slide-top-heading">Hi! User</h4>
     <img id="slide-bar-img" src="https://img.freepik.com/free-icon/user_318-159711.jpg" alt="User Image">
     <h6 id="slide-bottom-designation">Designation</h6>
@@ -26,3 +23,8 @@
   </div>
 
 </div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
